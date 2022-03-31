@@ -1,0 +1,27 @@
+body {
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+}
+
+.sidebar {
+  grid-column: 1;
+  background-color: rgb(25, 146, 212);
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 100px;
+  padding: 25px;
+}
+
+img {
+  height: 24px;
+  width: 24px;
+}
+
+.icon-set {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
