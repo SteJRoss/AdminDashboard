@@ -1,27 +1,73 @@
-body {
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Layout Styles */
 .container {
   display: grid;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 25% 1fr 25%;
+  grid-template-rows: repeat(4, 1fr);
+  height: 100vh;
+}
+
+header {
+  border: 1px solid red;
+  grid-column: 2 / 4;
 }
 
 .sidebar {
-  grid-column: 1;
+  grid-row: 1 / 5;
   background-color: rgb(25, 146, 212);
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 100px;
+  /* display: grid;
+  grid-template-rows: repeat(2, 1fr); */
+  /* gap: 100px; */
   padding: 25px;
+  color: #fff;
 }
 
+.welcome_section {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  border: 1px solid red;
+}
+
+.projects {
+  grid-row: 3 / 5;
+  border: 1px solid red;
+}
+
+.announcements {
+  border: 1px solid red;
+}
+
+.trending {
+  grid-column: 3;
+  grid-row: 4;
+  border: 1px solid red;
+}
+
+/* Components */
 img {
   height: 24px;
   width: 24px;
 }
 
-.icon-set {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.profile_pic {
+  border-radius: 50px;
+  height: 75px;
+  width: 75px;
+}
+
+.card {
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid black;
 }
