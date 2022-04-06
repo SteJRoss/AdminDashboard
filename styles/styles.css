@@ -42,7 +42,7 @@ img {
 }
 
 header {
-  border: var(--test);
+  /* border: var(--test); */
   grid-column: 2 / 4;
   display: flex;
   align-items: center;
@@ -63,12 +63,17 @@ header {
 .welcome_section {
   grid-column: 2 / 4;
   grid-row: 2;
-  border: var(--test);
+  /* border: var(--test); */
+  padding: 0 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .projects {
   grid-row: 3 / 5;
   border: var(--test);
+  background-color: rgb(226, 232, 240);
 }
 
 .announcements {
@@ -87,6 +92,7 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+  /* border: var(--test); */
 }
 
 .search_box {
