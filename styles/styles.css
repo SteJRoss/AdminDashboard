@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --test: 1px solid red;
+}
+
 body {
   font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -19,42 +23,58 @@ body {
 }
 
 header {
-  border: 1px solid red;
+  border: var(--test);
   grid-column: 2 / 4;
 }
 
 .sidebar {
   grid-row: 1 / 5;
   background-color: rgb(25, 146, 212);
+  display: flex;
+  flex-direction: column;
   /* display: grid;
-  grid-template-rows: repeat(2, 1fr); */
-  /* gap: 100px; */
-  padding: 25px;
+  grid-template-rows: repeat(2, 1fr);
+  */
+  gap: 100px;
+  padding: 15px;
   color: #fff;
 }
 
 .welcome_section {
   grid-column: 2 / 4;
   grid-row: 2;
-  border: 1px solid red;
+  border: var(--test);
 }
 
 .projects {
   grid-row: 3 / 5;
-  border: 1px solid red;
+  border: var(--test);
 }
 
 .announcements {
-  border: 1px solid red;
+  border: var(--test);
 }
 
 .trending {
   grid-column: 3;
   grid-row: 4;
-  border: 1px solid red;
+  border: var(--test);
 }
 
 /* Components */
+.title_container {
+  border: var(--test);
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.menu_item {
+  display: flex;
+  justify-content: center;
+  border: var(--test);
+  /* flex-direction: column; */
+}
+
 img {
   height: 24px;
   width: 24px;
