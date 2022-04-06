@@ -59,19 +59,20 @@ header {
 }
 
 /* Components */
-.title_container {
-  border: var(--test);
-  width: fit-content;
-  align-self: flex-start;
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
+.title_container,
 .menu_item {
   display: flex;
-  justify-content: center;
-  border: var(--test);
-  /* flex-direction: column; */
+  gap: 10px;
 }
-
+span {
+  align-self: center;
+}
 img {
   height: 24px;
   width: 24px;
