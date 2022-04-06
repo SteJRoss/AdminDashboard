@@ -104,7 +104,18 @@ header {
   border-color: rgba(223, 225, 229, 0);
 }
 
-.profile_pic {
+.bell {
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.bell:hover {
+  cursor: default;
+  transform: rotate(-15deg);
+  transition: all 0.1s ease-in-out 0s;
+  fill: #ffff00;
+}
+
+header .profile_pic {
   border-radius: 50px;
   height: 50px;
   width: 50px;
