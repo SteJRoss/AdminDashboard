@@ -138,12 +138,22 @@ header .profile_pic {
   display: flex;
   gap: 10px;
 }
+
 span {
   align-self: center;
 }
-img {
-  height: 24px;
-  width: 24px;
+
+.welcome_section .profile_pic {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+.welcome_msg p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
 }
 
 .card {
