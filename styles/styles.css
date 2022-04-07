@@ -51,7 +51,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .sidebar {
@@ -67,21 +67,25 @@ header {
 .welcome_section {
   grid-column: 2 / 4;
   grid-row: 2;
-  /* border: var(--test); */
-  padding: 0 10px;
+  padding: 0 20px;
+  padding-bottom: 20px;
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
 }
 
 .projects {
   grid-row: 3 / 5;
   /* border: var(--test); */
   background-color: rgb(226, 232, 240);
+  padding: 20px;
 }
 
 .announcements {
+  font-size: 0.85rem;
   background-color: rgb(226, 232, 240);
+  padding: 20px;
 }
 
 .trending {
@@ -154,13 +158,13 @@ span {
 }
 
 .welcome_msg p {
-  display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
   color: #000;
 }
 
 .project_cards {
+  margin-top: 15px;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -193,7 +197,22 @@ span {
   padding-left: 20px;
 }
 
-.card_title {
+.card_title,
+.title {
   color: #000;
   font-weight: bold;
+}
+
+.announcements_box {
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.trending {
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
+.trending_box {
+  margin-top: 15px;
 }
