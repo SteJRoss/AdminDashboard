@@ -33,6 +33,10 @@ img {
   width: 24px;
 }
 
+.section_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 /* Layout Styles */
 .container {
   display: grid;
