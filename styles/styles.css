@@ -134,7 +134,8 @@ hr {
   fill: #ffff00;
 }
 
-header .profile_pic {
+header .profile_pic,
+.profile_pic_reg {
   border-radius: 50px;
   height: 50px;
   width: 50px;
