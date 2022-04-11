@@ -219,5 +219,25 @@ span {
 }
 
 .trending_box {
-  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  line-height: 1.2;
+  color: #495057;
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+}
+
+.trending_icon {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.trending_icon img {
+  justify-self: center;
+}
+
+.trending_icon > div {
+  align-self: center;
 }
