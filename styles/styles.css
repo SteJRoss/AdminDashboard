@@ -79,49 +79,9 @@ header {
   grid-template-columns: 50% 50%;
 }
 
-.welcome_section {
-  grid-row-start: 2;
-  margin-top: 10px;
+.search_container {
   display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.sidebar {
-  grid-row: 1 / 5;
-  background-color: rgb(25, 146, 212);
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  padding: 15px;
-  color: #fff;
-}
-
-.projects {
-  grid-row: 3 / 5;
-  /* border: var(--test); */
-  background-color: rgb(226, 232, 240);
-  padding: 20px;
-}
-
-.announcements {
-  font-size: 0.85rem;
-  background-color: rgb(226, 232, 240);
-  padding: 20px;
-}
-
-.trending {
-  grid-column: 3;
-  grid-row: 4;
-  background-color: rgb(226, 232, 240);
-}
-
-/* Components */
-.container_left,
-.container_right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  /* border: var(--test); */
+  align-self: center;
 }
 
 .search_box {
@@ -157,39 +117,68 @@ header .profile_pic,
   width: 50px;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.title_container,
-.menu_item {
-  display: flex;
-  gap: 10px;
-}
-
-span {
-  align-self: center;
-}
-
 .welcome_section .profile_pic {
   border-radius: 50px;
   height: 100px;
   width: 100px;
 }
 
-.welcome_msg p {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #000;
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: end;
+  align-self: center;
+  gap: 25px;
+}
+
+/* || Sidebar || */
+.sidebar {
+  grid-row: 1 / 5;
+  background-color: rgb(25, 146, 212);
+  padding: 15px;
+  color: #fff;
+  display: grid;
+  grid-template-rows: 5% 30% 20%;
+  gap: 50px;
+}
+
+.dashboard_title {
+  font-size: 1.25rem;
+}
+
+.menu {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 15px;
+}
+
+.menu_item {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+/* || Main Section || */
+main {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: rgb(226, 232, 240);
+  padding: 35px;
+  gap: 20px;
+}
+
+.projects {
+  background-color: rgb(226, 232, 240);
+  grid-row: 1 / 3;
 }
 
 .project_cards {
   margin-top: 15px;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .card,
