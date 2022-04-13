@@ -92,22 +92,63 @@ header {
   border: none;
   border-radius: 50px;
   padding-left: 20px;
+  grid-column: 2;
 }
 
 .search_box:hover {
   box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-  /* border-color: rgba(223, 225, 229, 0); */
+}
+
+.user_profile {
+  justify-content: end;
+  display: grid;
+  align-items: center;
+  grid-template-columns: fit-content(50px) fit-content(100px) fit-content(128px);
+  gap: 25px;
 }
 
 .bell {
+  justify-self: end;
+  grid-column: 1;
   transition: all 0.1s ease-in-out 0s;
 }
 
 .bell:hover {
-  cursor: default;
+  cursor: pointer;
   transform: rotate(-15deg);
   transition: all 0.1s ease-in-out 0s;
-  fill: #ffff00;
+}
+
+.user {
+  justify-self: end;
+  grid-column: 2;
+}
+
+.userName {
+  grid-column: 3;
+  justify-self: end;
+}
+
+.welcome_section {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.welcome_info {
+  justify-self: start;
+  display: grid;
+  gap: 12px;
+}
+
+.welcome_msg {
+  grid-column: 2;
+  align-self: center;
+}
+
+.welcome_msg p {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 header .profile_pic,
