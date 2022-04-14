@@ -254,22 +254,29 @@ main {
   font-weight: bold;
 }
 
-.announcements_box {
-  margin-top: 15px;
-  padding: 20px;
+/* || Announcements || */
+.announcements {
+  font-size: 0.85rem;
 }
 
+.announcements_box {
+  margin-top: 15px;
+  padding: 15px;
+  display: grid;
+}
+
+/* || Trending || */
 .trending {
-  padding: 20px;
+  display: grid;
+  background-color: rgb(226, 232, 240);
   font-size: 0.85rem;
+  grid-row-start: 2;
 }
 
 .trending_box {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-  line-height: 1.2;
-  color: #495057;
   padding: 15px;
   display: grid;
   gap: 10px;
